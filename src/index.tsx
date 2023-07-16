@@ -1,8 +1,8 @@
 import ReactDOM from 'react-dom/client';
 import { Canvas } from '@react-three/fiber';
-import Light from './components/Light';
 
 import './index.scss';
+import Game from './components/Game';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
@@ -15,10 +15,6 @@ root.render(
         position: [ 2.5, 4, 6 ]
     }}
   >
-    <Light />
-    <mesh>
-      <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color={'hotpink'} />
-    </mesh>
+    <Game />
   </Canvas>
 );
